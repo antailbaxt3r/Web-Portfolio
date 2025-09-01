@@ -1,26 +1,97 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: "Coolvetica";
+    src: url("/public/fonts/clashdisplay.ttf") format("truetype");
+    font-weight: 400;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --background: #ffffff;
+    --foreground: #171717;
+    --work-color: #FCA5A5;
+    --projects-color: #93C5FD;
+    --about-color: #D8B4FE;
+    --contact-color: #72B488;
+    --font-display: "Coolvetica", sans-serif;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-work: var(--work-color);
+    --color-projects: var(--projects-color);
+    --color-about: var(--about-color);
+    --color-contact: var(--contact-color);
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
+    --font-coolvetica: "Coolvetica", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
+}
+
+* {
+    cursor: none;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-coolvetica);
+    font: font-coolvetica;
+}
+
+@layer components {
+    main {
+        @apply w-full overflow-x-hidden;
+    }
+
+    .hero-container {
+        @apply bg-white flex w-full h-screen flex-col;
+    }
+
+    .overlay {
+        @apply bg-transparent
+    }
+
+    .hero-grid {
+        @apply m-4 flex-1 flex flex-col justify-center;
+    }
+
+    .hero-grid-row {
+        @apply flex-1 flex justify-center;
+    }
+
+    .hero-grid-box {
+        @apply m-4 flex items-end flex-col justify-end;
+    }
+
+    .bordered {
+        @apply border-2 border-black;
+    }
+
+    .page {
+        @apply flex w-full h-screen flex-col bg-transparent;
+    }
+
+    .work-ex-box {
+        @apply m-4 p-4 flex flex-col justify-end border-2 border-white;
+    }
+
+    .navbar {
+        @apply flex pl-8 pt-2 pr-4 flex-col;
+    }
+
+    .about-me-col {
+        @apply flex flex-col justify-end;
+    }
+
+    .about-me-motion-box {
+        @apply m-4 flex flex-col justify-end;
+    }
 }
