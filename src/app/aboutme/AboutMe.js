@@ -129,7 +129,7 @@ const AboutMe = () => {
                                 style={{ colorScheme: "hsl" }}
                             >
                                 <h1 className="text-8xl font-semibold">
-                                    Hi, I'm Arjun
+                                    Hi, I&apos;m Arjun
                                 </h1>
                                 <br />
                                 <h1 className="text-2xl">
