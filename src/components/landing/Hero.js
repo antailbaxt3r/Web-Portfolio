@@ -30,7 +30,7 @@ const Hero = ({ additionalDelay }) => {
                 <div className="flex-none z-40">
                     <div className="flex-1 pl-8 pt-2 pr-8 z-40 flex">
                         <motion.h1
-                            className="text-6xl font-semibold text-black flex-1 z-40"
+                            className="md:text-6xl text-xl font-semibold text-black flex-1 z-40"
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1, delay: additionalDelay }}
@@ -38,7 +38,7 @@ const Hero = ({ additionalDelay }) => {
                             arjunbajpai
                         </motion.h1>
                         <motion.div
-                            className="text-6xl text-black flex-0.5 z-40 flex"
+                            className="md:text-6xl text-xl text-black flex-0.5 z-40 flex"
                         >
                             <motion.div
                                 whileHover={{
@@ -88,7 +88,7 @@ const Hero = ({ additionalDelay }) => {
                             delay={additionalDelay + 1}
                             hoverColor="#FCA5A5"
                             firstLoad={firstLoad}
-                            className="bordered flex-2"
+                            className="bordered md:flex-2"
                             onClick={setReveal}
                             target="/work"
                         />
@@ -98,7 +98,7 @@ const Hero = ({ additionalDelay }) => {
                             delay={additionalDelay + 1.4}
                             hoverColor="#93C5FD"
                             firstLoad={firstLoad}
-                            className="bordered flex-5"
+                            className="bordered md:flex-5"
                             onClick={setReveal}
                             target="/projects"
                         />
@@ -110,7 +110,7 @@ const Hero = ({ additionalDelay }) => {
                             delay={additionalDelay + 1.2}
                             hoverColor="#D8B4FE"
                             firstLoad={firstLoad}
-                            className="bordered flex-8"
+                            className="bordered md:flex-8"
                             onClick={setReveal}
                             target="/aboutme"
                         />
@@ -120,7 +120,7 @@ const Hero = ({ additionalDelay }) => {
                             delay={additionalDelay + 1.6}
                             hoverColor="#72B488"
                             firstLoad={firstLoad}
-                            className="bordered flex-3"
+                            className="bordered md:flex-3"
                             onClick={setReveal}
                             target="/contact"
                         />

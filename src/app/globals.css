@@ -64,11 +64,11 @@ body {
     }
 
     .hero-grid-row {
-        @apply flex-1 flex justify-center;
+        @apply flex-1 flex md:flex-row flex-col justify-center;
     }
 
     .hero-grid-box {
-        @apply m-4 flex items-end flex-col justify-end;
+        @apply md:m-4 m-2 flex flex-col justify-end items-end flex-1;
     }
 
     .bordered {

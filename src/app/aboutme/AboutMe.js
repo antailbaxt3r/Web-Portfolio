@@ -156,6 +156,7 @@ const AboutMe = () => {
                                     transition: { delay: 1.4, duration: 1 },
                                 }}
                                 whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 1.05 }}
                                 style={{ colorScheme: "hsl" }}
                             >
                                 <Spotify
@@ -167,7 +168,7 @@ const AboutMe = () => {
 
                         <div className="about-me-col flex-1">
                             <motion.div
-                                className="work-ex-box flex-1 p-0"
+                                className="about-me-motion-box flex-1 p-0"
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{
                                     opacity: 1,
