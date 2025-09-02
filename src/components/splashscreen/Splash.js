@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const Splash = () => {
     return (
-        <div className="srelative w-screen h-screen overflow-hidden">
+        <div className="relative w-screen h-screen overflow-hidden">
             <motion.div
                 className="absolute top-0 bottom-0 w-screen h-screen flex font-bold flex-col z-10 bg-black inset-0"
                 initial={{ x: "0%" }}
@@ -21,7 +21,7 @@ const Splash = () => {
                             delay: 0.5,
                         }}
                     >
-                        <h1 className="text-9xl">arjunbajpai</h1>
+                        <h1 className="md:text-9xl text-5xl">arjunbajpai</h1>
                     </motion.div>
                     <motion.div
                         className="w-full flex-1 items-center flex"
@@ -33,7 +33,7 @@ const Splash = () => {
                             delay: 0.9,
                         }}
                     >
-                        <h1 className="w-full text-9xl align-middle text-center">
+                        <h1 className="w-full md:text-9xl text-5xl align-middle text-center">
                             software
                         </h1>
                     </motion.div>
@@ -47,7 +47,7 @@ const Splash = () => {
                             delay: 1.3,
                         }}
                     >
-                        <h1 className="w-full text-9xl align-top text-end">
+                        <h1 className="w-full text-5xl md:text-9xl align-top text-end">
                             developer
                         </h1>
                     </motion.div>
