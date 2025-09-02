@@ -19,13 +19,13 @@ const Hero = ({ additionalDelay }) => {
     const [reveal, setReveal] = useState(null);
 
     useEffect(() => {
-        const timer = setTimeout(() => {
+        setTimeout(() => {
             setFirstLoad(false);
         }, additionalDelay * 1000 + 1800);
     }, []);
 
     return (
-        <div className="hero-container relative">
+        <div className="relative hero-container">
             <div className="absolute hero-container">
                 <div className="flex-none z-40">
                     <div className="flex-1 md:pl-8 pl-2 pt-2 md:pr-8 pr-2 z-40 flex">

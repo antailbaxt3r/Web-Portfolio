@@ -36,7 +36,7 @@ Also handled large-scale service issues, fixed 800+ security bugs, and delivered
                             additionalDelay={0.2}
                         />
                     </div>
-                    <div className="hero-grid-row">
+                    <div className="hero-grid-row flex-col-reverse">
                         <WorkExperience
                             init={{ y: 20 }}
                             className="flex-3"

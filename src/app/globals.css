@@ -52,7 +52,7 @@ body {
     }
 
     .hero-container {
-        @apply bg-white flex w-full h-screen flex-col;
+        @apply bg-white flex w-full h-full flex-col;
     }
 
     .overlay {
@@ -80,11 +80,11 @@ body {
     }
 
     .work-ex-box {
-        @apply m-4 p-4 flex flex-col justify-end border-2 border-white;
+        @apply md:m-4 m-2 md:p-4 p-2 flex flex-col justify-end border-2 border-white;
     }
 
     .navbar {
-        @apply flex pl-8 pt-2 pr-4 flex-col;
+        @apply flex md:pl-8 pl-2 md:pt-2 pt-1 md:pr-4 pr-2 flex-col;
     }
 
     .about-me-col {

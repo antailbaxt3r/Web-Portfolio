@@ -49,11 +49,13 @@ const WorkExperience = ({
             style={{ colorScheme: "hsl" }}
             onHoverStart={() => setHover(true)}
             onHoverEnd={() => setHover(false)}
+            onTapStart={() => setHover(true)}
+            onTapCancel={() => setHover(false)}
         >
             <motion.div
                 layout
                 transition={{ duration: 0.2, ease: "easeInOut" }}
-                className={`flex gap-4 ${
+                className={`flex md:gap-4 gap-2 ${
                     hover ? "items-start justify-start" : "items-end justify-end"
                 }`}
             >
@@ -64,13 +66,13 @@ const WorkExperience = ({
                         hover ? "text-start order-2" : "text-end order-1"
                     }`}
                 >
-                    <motion.div layout className="text-4xl font-medium">
+                    <motion.div layout className="md:text-4xl text-xl font-medium">
                         {company}
                     </motion.div>
-                    <motion.div layout className="text-2xl">
+                    <motion.div layout className="md:text-2xl text-md">
                         {title}
                     </motion.div>
-                    <motion.div layout className="text-l">
+                    <motion.div layout className="md:text-l text-sm">
                         {time}
                     </motion.div>
                 </motion.div>
@@ -78,7 +80,7 @@ const WorkExperience = ({
                 {/* Image block */}
                 <motion.div
                     layout
-                    className={`w-24 h-24 flex ${
+                    className={`md:w-24 md:h-24 w-16 h-16 flex ${
                         hover ? "items-start justify-start order-1" : "items-end justify-end order-2"
                     }`}
                 >
@@ -93,7 +95,7 @@ const WorkExperience = ({
             {hover && (
                 <motion.div
                     layout
-                    className="text-lg mt-4"
+                    className="md:text-lg text-sm mt-4"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1, transition: { duration: 1 } }}
                 >

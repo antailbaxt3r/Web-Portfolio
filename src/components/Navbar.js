@@ -1,5 +1,4 @@
 import React, {  } from "react";
-import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { saveAs } from "file-saver";
 import {
@@ -8,7 +7,6 @@ import {
 } from "../../public/constants.js";
 
 const Navbar = ({ title, onClick, isInvisible = false }) => {
-    const router = useRouter();
     const navList = NavigationList.filter((x) => x != title);
     const navColors = Object.keys(NavigationColorMapping)
         .filter((key) => key !== title)
@@ -17,7 +15,7 @@ const Navbar = ({ title, onClick, isInvisible = false }) => {
     return (
         <div className={`flex-1 z-40 flex ${isInvisible ? "invisible" : ""}`}>
             <motion.div
-                className="flex items-center text-center md:text-6xl text-xl text-white flex-3 z-40"
+                className="flex md:text-6xl text-3xl text-white flex-3 z-40"
                 initial={{ opacity: 0, y: 20, scale: 1 }}
                 animate={{
                     opacity: 1,
