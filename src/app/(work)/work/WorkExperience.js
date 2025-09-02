@@ -75,10 +75,10 @@ const WorkExperience = ({
                     <motion.div layout className="md:text-4xl text-xl font-medium">
                         {company}
                     </motion.div>
-                    <motion.div layout className="md:text-2xl text-md">
+                    <motion.div layout className="md:text-2xl text-lg">
                         {title}
                     </motion.div>
-                    <motion.div layout className="md:text-l text-sm">
+                    <motion.div layout className="md:text-l text-md">
                         {time}
                     </motion.div>
                 </motion.div>

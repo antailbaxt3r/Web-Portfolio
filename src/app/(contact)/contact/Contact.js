@@ -23,9 +23,9 @@ const Contact = () => {
                     transition: { duration: 0.3 },
                 }}
                 style={{ colorScheme: "hsl" }}
-                className="flex h-full flex-1 flex-col mr-8 ml-8 mt-24 mb-8 border-2 border-white p-4 items-end justify-end"
+                className="flex h-full flex-1 flex-col md:m-8 m-2 md:mt-8 border-2 border-white p-4 items-end justify-end"
             >
-                <h1 className="text-3xl md:text-6xl">I&apos;m currently open to work!</h1>
+                <h1 className="text-3xl md:text-6xl text-end">I&apos;m currently open to work!</h1>
                 <br />
                 <h1 className="text-2xl md:text-4xl text-semibold">Reach out to me</h1>
                 <motion.h1

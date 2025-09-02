@@ -1,10 +1,10 @@
 import localFont from "next/font/local";
-import "./globals.css";
+import "../globals.css";
 
-import Cursor from "../components/Cursor";
+import Cursor from "../../components/Cursor";
 
 const coolvetica = localFont({
-    src: "../../public/fonts/clashdisplay.ttf",
+    src: "../../../public/fonts/clashdisplay.ttf",
     subsets: ["latin"],
     variable: "--font-coolvetica",
 });
@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
                 />
             </head>
             <body
-                className={`${coolvetica.variable} antialiased w-max-screen h-max-screen`}
+                className={`${coolvetica.variable} antialiased bg-work work-theme`}
             >
                 <Cursor />
                 {children}

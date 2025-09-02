@@ -4,10 +4,7 @@ import Navbar from "@/components/Navbar";
 import { motion } from "framer-motion";
 import MotionOverlay from "./MotionOverlay";
 
-const OverlayAnimationContainer = ({
-    firstLoad = true,
-    additionalDelay = 0,
-}) => {
+const OverlayAnimationContainer = () => {
     const [stretch1, setStretch1] = useState(true);
     const [stretch2, setStretch2] = useState(true);
     const [stretch3, setStretch3] = useState(true);
@@ -24,8 +21,8 @@ const OverlayAnimationContainer = ({
                 </div>
 
                 <div className="hero-grid flex-row">
-                    <div className="hero-grid-row">
-                        <div className="about-me-col flex-1">
+                    <div className="hero-grid-row md:flex-row flex-col-reverse">
+                        <div className="about-me-col flex-1 md:flex-col flex-row-reverse">
                             <div className="about-me-motion-box flex-5">
                                 <MotionOverlay
                                     stretchVariable={stretch1}
@@ -49,8 +46,8 @@ const OverlayAnimationContainer = ({
                                 />
                             </div>
                         </div>
-                        <div className="about-me-col flex-3">
-                            <div className="about-me-motion-box flex-9">
+                        <div className="about-me-col flex-3 md:flex-col flex-col">
+                            <div className="about-me-motion-box md:flex-col flex-col flex-9">
                                 <MotionOverlay
                                     stretchVariable={stretch3}
                                     setStretchVariable={setStretch3}
@@ -74,7 +71,7 @@ const OverlayAnimationContainer = ({
                             </div>
                         </div>
 
-                        <div className="about-me-col flex-1">
+                        <div className="about-me-col flex-1 md:flex-col flex-row-reverse">
                             <div className="about-me-motion-box flex-1 p-0">
                                 <img
                                     src="/images/arjun.jpg"
@@ -82,7 +79,7 @@ const OverlayAnimationContainer = ({
                                     className="w-full h-full object-contain"
                                 />
                             </div>
-                            <div className="about-me-motion-box flex-2">
+                            <div className="about-me-motion-box md:flex-2 flex-0.5">
                                 <MotionOverlay
                                     stretchVariable={stretch6}
                                     setStretchVariable={setStretch6}

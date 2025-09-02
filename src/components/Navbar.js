@@ -78,7 +78,7 @@ const Navbar = ({ title, onClick, isInvisible = false }) => {
                     </motion.div>
                 ))}
                 <motion.div
-                    className="md:text-2xl text-sm md:ml-4 ml-1 flex-1 p-2 text-white"
+                    className="md:text-xl text-sm md:ml-4 ml-1 flex-1 p-2 text-white"
                     whileHover={{
                         scale: 1.15,
                         background: "#FACC15",

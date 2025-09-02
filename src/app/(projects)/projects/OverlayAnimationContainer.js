@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
-import MotionOverlay from "@/app/aboutme/MotionOverlay";
+import MotionOverlay from "@/app/(about)/aboutme/MotionOverlay";
 
 const OverlayAnimationContainer = ({
     firstLoad = true,
@@ -19,7 +19,7 @@ const OverlayAnimationContainer = ({
                     <Navbar title="" onClick={null} isInvisible={true} />
                 </div>
 
-                <div className="hero-grid md:flex-row">
+                <div className="hero-grid md:flex-row flex-col">
                     <div className="about-me-col flex-1">
                         <div className="about-me-motion-box flex-5">
                             <MotionOverlay

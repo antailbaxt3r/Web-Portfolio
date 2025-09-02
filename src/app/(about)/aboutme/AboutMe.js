@@ -3,10 +3,10 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Spotify } from "react-spotify-embed";
 
-import OverlayAnimationContainer from "@/app/aboutme/OverlayAnimationContainer";
+import OverlayAnimationContainer from "@/app/(about)/aboutme/OverlayAnimationContainer.js";
 import Navbar from "@/components/Navbar";
 import ScreenReveal from "@/components/screens/ScreenReveal";
-import { TechStack, Languages } from "../../../public/constants.js";
+import { TechStack, Languages } from "../../../../public/constants.js";
 
 const AboutMe = () => {
     const [reveal, setReveal] = useState(null);
@@ -26,8 +26,8 @@ const AboutMe = () => {
                 </div>
 
                 <div className="hero-grid">
-                    <div className="hero-grid-row">
-                        <div className="about-me-col flex-1">
+                    <div className="hero-grid-row md:flex-row flex-col-reverse">
+                        <div className="about-me-col flex-1 md:flex-col flex-row-reverse">
                             <motion.div
                                 className="work-ex-box flex-5"
                                 initial={{
@@ -48,7 +48,7 @@ const AboutMe = () => {
                                 }}
                                 style={{ colorScheme: "hsl" }}
                             >
-                                <h1 className="md:text-4xl text-s font-semibold">
+                                <h1 className="md:text-4xl text-lg font-semibold">
                                     Tech I use
                                 </h1>
                                 <br />
@@ -59,7 +59,7 @@ const AboutMe = () => {
                                             className="flex items-center gap-4"
                                         >
                                             {icon}
-                                            <h1 className="smtext-2xl text-sm flex-3">
+                                            <h1 className="md:text-2xl text-md flex-3">
                                                 {name}
                                             </h1>
                                         </div>
@@ -87,7 +87,7 @@ const AboutMe = () => {
                                 }}
                                 style={{ colorScheme: "hsl" }}
                             >
-                                <h1 className="md:text-4xl text-s font-semibold">
+                                <h1 className="md:text-4xl text-lg font-semibold">
                                     Languages
                                 </h1>
                                 <br />
@@ -98,7 +98,7 @@ const AboutMe = () => {
                                             className="flex items-center gap-4"
                                         >
                                             {icon}
-                                            <h1 className="md:text-2xl text-xs flex-3">
+                                            <h1 className="md:text-2xl text-md flex-3">
                                                 {name}
                                             </h1>
                                         </div>
@@ -107,7 +107,7 @@ const AboutMe = () => {
                             </motion.div>
                         </div>
 
-                        <div className="about-me-col flex-3">
+                        <div className="about-me-col flex-3 md:flex-col flex-col">
                             <motion.div
                                 className="work-ex-box flex-9 text-white p-4"
                                 initial={{
@@ -128,11 +128,11 @@ const AboutMe = () => {
                                 }}
                                 style={{ colorScheme: "hsl" }}
                             >
-                                <h1 className="md:text-8xl text-sm font-semibold">
+                                <h1 className="md:text-8xl text-xl font-semibold">
                                     Hi, I&apos;m Arjun
                                 </h1>
                                 <br />
-                                <h1 className="md:text-2xl text-[12px]">
+                                <h1 className="md:text-2xl text-md">
                                     I’m from India and currently a graduate
                                     student at NYU, pursuing my Master’s in
                                     Computer Science. Before this, I spent 3
@@ -140,7 +140,7 @@ const AboutMe = () => {
                                     working on large-scale backend systems.
                                 </h1>
                                 <br />
-                                <h1 className="smtext-2xl text-[12px]">
+                                <h1 className="md:text-2xl text-md">
                                     Outside of tech, I love writing music,
                                     getting lost in books, and exploring new
                                     ideas that mix creativity with engineering.
@@ -166,17 +166,16 @@ const AboutMe = () => {
                             </motion.div>
                         </div>
 
-                        <div className="about-me-col flex-1">
+                        <div className="about-me-col flex-1 md:flex-col flex-row-reverse">
                             <motion.div
-                                className="about-me-motion-box flex-1 p-0"
-                                initial={{ opacity: 0, y: 20 }}
+                                className="about-me-motion-box flex-1 p-0 flex"
+                                initial={{ opacity: 0, y: 30 }}
                                 animate={{
                                     opacity: 1,
                                     y: 0,
                                     transition: { delay: 1, duration: 1 },
                                 }}
                                 whileHover={{
-                                    backgroundColor: "#ffffff",
                                     scale: 1.05,
                                 }}
                                 style={{ colorScheme: "hsl" }}
@@ -188,7 +187,7 @@ const AboutMe = () => {
                             </motion.div>
 
                             <motion.div
-                                className="work-ex-box flex-2"
+                                className="work-ex-box md:flex-2 flex-0.5"
                                 initial={{
                                     opacity: 0,
                                     x: -20,
@@ -208,27 +207,27 @@ const AboutMe = () => {
                                 style={{ colorScheme: "hsl" }}
                             >
                                 <div className="flex flex-col">
-                                    <h1 className="md:text-4xl text-md font-semibold">
+                                    <h1 className="md:text-4xl text-xl font-semibold">
                                         Education
                                     </h1>
                                     <br />
-                                    <h1 className="md:text-2xl text-sm font-semibold">
+                                    <h1 className="md:text-2xl text-lg font-semibold">
                                         New York University
                                     </h1>
-                                    <h1 className="md:text-xl text:xs font-medium">
+                                    <h1 className="md:text-xl text-md font-medium">
                                         MS Computer Science
                                     </h1>
-                                    <h1 className="md:text-l text-xs">
+                                    <h1 className="md:text-lg text-sm">
                                         Sep 2025 - Present
                                     </h1>
                                     <br />
-                                    <h1 className="md:text-2xl text-sm font-semibold">
+                                    <h1 className="md:text-2xl text-lg font-semibold">
                                         BITS Pilani
                                     </h1>
-                                    <h1 className="md:text-xl text-xs font-medium">
+                                    <h1 className="md:text-xl text-md font-medium">
                                         BE Computer Science
                                     </h1>
-                                    <h1 className="md:text-l text-xs">
+                                    <h1 className="md:text-lg text-sm">
                                         Aug 2018 - Jun 2022
                                     </h1>
                                 </div>
@@ -247,7 +246,7 @@ const AboutMe = () => {
                 )}
             </div>
 
-            {firstLoad && <OverlayAnimationContainer />}
+            {/* {firstLoad && <OverlayAnimationContainer />} */}
         </div>
     );
 };

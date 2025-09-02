@@ -2,8 +2,8 @@
 import localFont from "next/font/local";
 import { useEffect, useState } from "react";
 
-import Splash from "../components/splashscreen/Splash";
-import Hero from "../components/landing/Hero";
+import Splash from "../../components/splashscreen/Splash";
+import Hero from "../../components/landing/Hero";
 
 const Home = () => {
     const [splash, setSplash] = useState(true);

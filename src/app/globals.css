@@ -9,10 +9,10 @@
 :root {
     --background: #ffffff;
     --foreground: #171717;
-    --work-color: #FCA5A5;
-    --projects-color: #93C5FD;
-    --about-color: #D8B4FE;
-    --contact-color: #72B488;
+    --work-color: #fca5a5;
+    --projects-color: #93c5fd;
+    --about-color: #d8b4fe;
+    --contact-color: #72b488;
     --font-display: "Coolvetica", sans-serif;
 }
 
@@ -35,6 +35,22 @@
     }
 }
 
+.work-theme {
+    --background: #fca5a5;
+    background-color: var(--work-color);
+}
+
+.projects-theme {
+    --background: var(--projects-color);
+}
+
+.about-theme {
+    --background: var(--about-color);
+}
+
+.contact-theme {
+    --background: var(--contact-color);
+}
 * {
     @apply lg:cursor-none;
 }
@@ -52,6 +68,30 @@ body {
         @apply w-full overflow-x-hidden;
     }
 
+    .work {
+        body {
+            background: var(--work-color);
+        }
+    }
+
+    .projects {
+        body {
+            background: var(--work-color);
+        }
+    }
+
+    .about {
+        body {
+            background: var(--work-color);
+        }
+    }
+
+    .contact {
+        body {
+            background: var(--work-color);
+        }
+    }
+
     .hero-container {
         @apply bg-white flex w-full h-screen flex-col;
     }
@@ -61,7 +101,7 @@ body {
     }
 
     .hero-grid {
-        @apply md:m-4 flex-1 flex flex-col justify-center;
+        @apply md:m-4 flex-1 flex justify-center;
     }
 
     .hero-grid-row {
@@ -89,10 +129,10 @@ body {
     }
 
     .about-me-col {
-        @apply flex flex-col justify-end;
+        @apply flex justify-end;
     }
 
     .about-me-motion-box {
-        @apply m-4 flex flex-col justify-end;
+        @apply md:m-4 m-2 md:p-4 p-2 flex flex-col justify-end;
     }
 }
