@@ -47,7 +47,7 @@ export const HeroBox = ({
         >
             <motion.div
                 variants={labelVariants}
-                className="absolute flex-end text-black text-6xl pr-4 pb-2"
+                className="absolute flex-end text-black md:text-6xl text-3xl pr-4 pb-2"
             >
                 {label}
             </motion.div>

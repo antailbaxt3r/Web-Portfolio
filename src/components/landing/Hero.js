@@ -30,7 +30,7 @@ const Hero = ({ additionalDelay }) => {
                 <div className="flex-none z-40">
                     <div className="flex-1 pl-8 pt-2 pr-8 z-40 flex">
                         <motion.h1
-                            className="md:text-6xl text-xl font-semibold text-black flex-1 z-40"
+                            className="md:text-6xl text-3xl font-semibold text-black flex-1 z-40"
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1, delay: additionalDelay }}
@@ -38,7 +38,7 @@ const Hero = ({ additionalDelay }) => {
                             arjunbajpai
                         </motion.h1>
                         <motion.div
-                            className="md:text-6xl text-xl text-black flex-0.5 z-40 flex"
+                            className="md:text-6xl text-3xl text-black flex-0.5 z-40 flex"
                         >
                             <motion.div
                                 whileHover={{

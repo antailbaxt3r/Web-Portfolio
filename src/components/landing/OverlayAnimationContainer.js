@@ -21,10 +21,11 @@ const OverlayAnimationContainer = ({
                 <div className="flex-none ">
                     <div className="flex-1 pl-8 pt-2 pr-8">
                         <motion.h1
-                            className="text-6xl text-black font-semibold flex-1"
+                            className="md:text-6xl text-lg text-black font-semibold flex-1"
                             initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
+                            animate={{ opacity: 0, y: 0 }}
                             transition={{ duration: 1, delay: additionalDelay }}
+                            style={{visibility: 0}}
                         >
                             arjunbajpai
                         </motion.h1>
@@ -32,7 +33,7 @@ const OverlayAnimationContainer = ({
                 </div>
                 <div className="hero-grid">
                     <div className="hero-grid-row">
-                        <div className="hero-grid-box flex-2">
+                        <div className="hero-grid-box md:flex-2">
                             <MotionOverlay
                                 stretchVariable={stretchRed}
                                 setStretchVariable={setStretchRed}
@@ -43,7 +44,7 @@ const OverlayAnimationContainer = ({
                                 color="bg-work"
                             />
                         </div>
-                        <div className="hero-grid-box flex-5">
+                        <div className="hero-grid-box md:flex-5">
                             <MotionOverlay
                                 stretchVariable={stretchBlue}
                                 setStretchVariable={setStretchBlue}
@@ -56,7 +57,7 @@ const OverlayAnimationContainer = ({
                         </div>
                     </div>
                     <div className="hero-grid-row">
-                        <div className="hero-grid-box flex-8">
+                        <div className="hero-grid-box md:flex-8">
                             <MotionOverlay
                                 stretchVariable={stretchYellow}
                                 setStretchVariable={setStretchYellow}
@@ -67,7 +68,7 @@ const OverlayAnimationContainer = ({
                                 color="bg-about"
                             />
                         </div>
-                        <div className="hero-grid-box flex-3">
+                        <div className="hero-grid-box md:flex-3">
                             <MotionOverlay
                                 stretchVariable={stretchGreen}
                                 setStretchVariable={setStretchGreen}
