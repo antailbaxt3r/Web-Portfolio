@@ -60,7 +60,7 @@ body {
     }
 
     .hero-grid {
-        @apply m-4 flex-1 flex flex-col justify-center;
+        @apply md:m-4 flex-1 flex flex-col justify-center;
     }
 
     .hero-grid-row {

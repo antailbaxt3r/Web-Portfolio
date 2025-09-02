@@ -48,7 +48,7 @@ const AboutMe = () => {
                                 }}
                                 style={{ colorScheme: "hsl" }}
                             >
-                                <h1 className="md:text-4xl text-md font-semibold">
+                                <h1 className="md:text-4xl text-s font-semibold">
                                     Tech I use
                                 </h1>
                                 <br />
@@ -87,7 +87,7 @@ const AboutMe = () => {
                                 }}
                                 style={{ colorScheme: "hsl" }}
                             >
-                                <h1 className="md:text-4xl text-md font-semibold">
+                                <h1 className="md:text-4xl text-s font-semibold">
                                     Languages
                                 </h1>
                                 <br />
@@ -98,7 +98,7 @@ const AboutMe = () => {
                                             className="flex items-center gap-4"
                                         >
                                             {icon}
-                                            <h1 className="md:text-2xl text-sm flex-3">
+                                            <h1 className="md:text-2xl text-xs flex-3">
                                                 {name}
                                             </h1>
                                         </div>
@@ -128,11 +128,11 @@ const AboutMe = () => {
                                 }}
                                 style={{ colorScheme: "hsl" }}
                             >
-                                <h1 className="md:text-8xl text-lg font-semibold">
+                                <h1 className="md:text-8xl text-sm font-semibold">
                                     Hi, I&apos;m Arjun
                                 </h1>
                                 <br />
-                                <h1 className="md:text-2xl text-sm">
+                                <h1 className="md:text-2xl text-[12px]">
                                     I’m from India and currently a graduate
                                     student at NYU, pursuing my Master’s in
                                     Computer Science. Before this, I spent 3
@@ -140,7 +140,7 @@ const AboutMe = () => {
                                     working on large-scale backend systems.
                                 </h1>
                                 <br />
-                                <h1 className="smtext-2xl text-sm">
+                                <h1 className="smtext-2xl text-[12px]">
                                     Outside of tech, I love writing music,
                                     getting lost in books, and exploring new
                                     ideas that mix creativity with engineering.
@@ -207,24 +207,24 @@ const AboutMe = () => {
                                 style={{ colorScheme: "hsl" }}
                             >
                                 <div className="flex flex-col">
-                                    <h1 className="md:text-4xl text-lg font-semibold">
+                                    <h1 className="md:text-4xl text-md font-semibold">
                                         Education
                                     </h1>
                                     <br />
-                                    <h1 className="md:text-2xl text-md font-semibold">
+                                    <h1 className="md:text-2xl text-sm font-semibold">
                                         New York University
                                     </h1>
-                                    <h1 className="md:text-xl text:sm font-medium">
+                                    <h1 className="md:text-xl text:xs font-medium">
                                         MS Computer Science
                                     </h1>
                                     <h1 className="md:text-l text-xs">
                                         Sep 2025 - Present
                                     </h1>
                                     <br />
-                                    <h1 className="md:text-2xl text-md font-semibold">
+                                    <h1 className="md:text-2xl text-sm font-semibold">
                                         BITS Pilani
                                     </h1>
-                                    <h1 className="md:text-xl text-sm font-medium">
+                                    <h1 className="md:text-xl text-xs font-medium">
                                         BE Computer Science
                                     </h1>
                                     <h1 className="md:text-l text-xs">
