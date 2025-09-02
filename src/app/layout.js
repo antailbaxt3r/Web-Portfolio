@@ -1,18 +1,7 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
 import Cursor from "../components/Cursor";
-
-const geistSans = Geist({
-    variable: "--font-geist-sans",
-    subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-    variable: "--font-geist-mono",
-    subsets: ["latin"],
-});
 
 const coolvetica = localFont({
     src: "../../public/fonts/clashdisplay.ttf",
@@ -49,7 +38,7 @@ export default function RootLayout({ children }) {
                 />
             </head>
             <body
-                className={`${coolvetica.variable} ${geistSans.variable} ${geistMono.variable} antialiased w-max-screen h-max-screen`}
+                className={`${coolvetica.variable} antialiased w-max-screen h-max-screen`}
             >
                 <Cursor />
                 {children}

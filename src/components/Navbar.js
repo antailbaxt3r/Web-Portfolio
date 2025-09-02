@@ -44,7 +44,7 @@ const Navbar = ({ title, onClick, isInvisible = false }) => {
                 {navList.map((item, index) => (
                     <motion.div
                         key={item}
-                        className="md:text-xl text-[10px] ml-4 flex-1 p-2 text-white"
+                        className="md:text-xl text-sm md:ml-4 ml-1 flex-1 p-2 text-white"
                         whileHover={{
                             scale: 1.15,
                             background: navColors[index],
@@ -78,7 +78,7 @@ const Navbar = ({ title, onClick, isInvisible = false }) => {
                     </motion.div>
                 ))}
                 <motion.div
-                    className="md:text-2xl text-xs ml-4 flex-1 p-2 text-white"
+                    className="md:text-2xl text-sm md:ml-4 ml-1 flex-1 p-2 text-white"
                     whileHover={{
                         scale: 1.15,
                         background: "#FACC15",
