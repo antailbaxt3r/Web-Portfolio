@@ -16,7 +16,7 @@ const OverlayAnimationContainer = ({
     return (
         <div className="absolute hero-container overlay">
             <div className="page bg-transparent absolute">
-                <div className="navbar pb-2">
+                <div className="navbar">
                     <Navbar title="" onClick={null} isInvisible={true} />
                 </div>
                 <div className="hero-grid">
@@ -33,7 +33,7 @@ const OverlayAnimationContainer = ({
                         />
                     </div>
                 </div>
-                <div className="hero-grid-row">
+                <div className="hero-grid-row flex-col-reverse">
                     <div className="hero-grid-box flex-3">
                         <MotionOverlay
                             stretchVariable={stretch3}

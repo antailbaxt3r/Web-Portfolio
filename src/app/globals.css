@@ -52,11 +52,11 @@ body {
     }
 
     .hero-container {
-        @apply bg-white flex w-full h-full flex-col;
+        @apply bg-white flex w-full h-screen flex-col;
     }
 
     .overlay {
-        @apply bg-transparent
+        @apply bg-transparent;
     }
 
     .hero-grid {

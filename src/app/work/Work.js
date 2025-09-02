@@ -17,7 +17,7 @@ const Work = () => {
     }, []);
 
     return (
-        <div className="hero-container relative bg-transparent">
+        <div className="hero-container relative">
             <div className="page bg-work absolute">
                 <div className="navbar">
                     <Navbar title="work" onClick={setReveal} />

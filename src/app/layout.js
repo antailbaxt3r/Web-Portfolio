@@ -49,7 +49,7 @@ export default function RootLayout({ children }) {
                 />
             </head>
             <body
-                className={`${coolvetica.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
+                className={`${coolvetica.variable} ${geistSans.variable} ${geistMono.variable} antialiased w-max-screen h-max-screen`}
             >
                 <Cursor />
                 {children}

@@ -39,6 +39,12 @@ const WorkExperience = ({
             color: "#000000",
             transition: { duration: 0.3 },
         },
+        whileTap: {
+            scale: 1.02,
+            background: "#ffffff",
+            color: "#000000",
+            transition: { duration: 0.3 },
+        },
     };
 
     return (
