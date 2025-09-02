@@ -25,11 +25,11 @@ const Contact = () => {
                 style={{ colorScheme: "hsl" }}
                 className="flex h-full flex-1 flex-col mr-8 ml-8 mt-24 mb-8 border-2 border-white p-4 items-end justify-end"
             >
-                <h1 className="text-6xl">I&apos;m currently open to work!</h1>
+                <h1 className="text-3xl md:text-6xl">I&apos;m currently open to work!</h1>
                 <br />
-                <h1 className="text-4xl text-semibold">Reach out to me</h1>
+                <h1 className="text-2xl md:text-4xl text-semibold">Reach out to me</h1>
                 <motion.h1
-                    className="text-2xl"
+                    className="text-lg md:text-2xl"
                     initial={{ scale: 1 }}
                     whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
                     onClick={() => {
@@ -39,8 +39,8 @@ const Contact = () => {
                 >
                     arjunbajpaiwork@gmail.com
                 </motion.h1>
-                <h1 className="text-2xl">Brooklyn, NY</h1>
-                <h1 className="text-2xl">+1 929 420-9174</h1>
+                <h1 className="text-lg md:text-2xl">Brooklyn, NY</h1>
+                <h1 className="text-lg md:text-2xl">+1 929 420-9174</h1>
             </motion.div>
             {reveal && (
                 <ScreenReveal

@@ -36,7 +36,7 @@
 }
 
 * {
-    cursor: none;
+    @apply lg:cursor-none;
 }
 
 body {
@@ -44,6 +44,7 @@ body {
     color: var(--foreground);
     font-family: var(--font-coolvetica);
     font: font-coolvetica;
+    user-select: none;
 }
 
 @layer components {
