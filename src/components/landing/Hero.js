@@ -28,7 +28,7 @@ const Hero = ({ additionalDelay }) => {
         <div className="hero-container relative">
             <div className="absolute hero-container">
                 <div className="flex-none z-40">
-                    <div className="flex-1 pl-8 pt-2 pr-8 z-40 flex">
+                    <div className="flex-1 md:pl-8 pl-2 pt-2 md:pr-8 pr-2 z-40 flex">
                         <motion.h1
                             className="md:text-6xl text-3xl font-semibold text-black flex-1 z-40"
                             initial={{ opacity: 0, y: 20 }}
