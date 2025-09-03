@@ -80,8 +80,8 @@ const Hero = ({ additionalDelay }) => {
                         </motion.div>
                     </div>
                 </div>
-                <div className="hero-grid">
-                    <div className=" hero-grid-row">
+                <div className="hero-grid flex-col">
+                    <div className=" hero-grid-row md:flex-row flex-col">
                         <HeroBox
                             label="work"
                             init={{ y: -10 }}

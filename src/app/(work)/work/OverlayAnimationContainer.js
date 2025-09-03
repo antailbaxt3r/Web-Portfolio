@@ -19,7 +19,7 @@ const OverlayAnimationContainer = ({
                 <div className="navbar">
                     <Navbar title="" onClick={null} isInvisible={true} />
                 </div>
-                <div className="hero-grid md:flex-row flex-col">
+                <div className="hero-grid flex-col">
                 <div className="hero-grid-row">
                     <div className="hero-grid-box flex-1">
                         <MotionOverlay

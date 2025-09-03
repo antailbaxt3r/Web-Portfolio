@@ -15,7 +15,7 @@ const Navbar = ({ title, onClick, isInvisible = false }) => {
     return (
         <div className={`flex-1 z-40 flex ${isInvisible ? "invisible" : ""}`}>
             <motion.div
-                className="flex md:text-6xl text-3xl text-white flex-3 z-40"
+                className="flex md:text-6xl text-3xl text-white md:flex-3 flex-1 bg-pink-500"
                 initial={{ opacity: 0, y: 20, scale: 1 }}
                 animate={{
                     opacity: 1,
@@ -39,7 +39,7 @@ const Navbar = ({ title, onClick, isInvisible = false }) => {
                     {title}
                 </motion.h1>
             </motion.div>
-            <motion.div className="md:text-6xl text-lg font-medium flex-1 z-40 flex flex-end justify-end items-center text-center">
+            <motion.div className="bg-black md:text-6xl text-lg font-medium flex-1 flex flex-end justify-end md:items-center items-start text-center">
                 
                 {navList.map((item, index) => (
                     <motion.div

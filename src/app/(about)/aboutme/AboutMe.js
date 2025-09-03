@@ -246,7 +246,7 @@ const AboutMe = () => {
                 )}
             </div>
 
-            {/* {firstLoad && <OverlayAnimationContainer />} */}
+            {firstLoad && <OverlayAnimationContainer />}
         </div>
     );
 };

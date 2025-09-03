@@ -14,7 +14,7 @@ const OverlayAnimationContainer = () => {
     const startDelay = 0.5;
 
     return (
-        <div className="absolute hero-container overlay">
+        <div className="absolute hero-container overlay md:visible invisible">
             <div className="page bg-transparent absolute">
                 <div className="navbar pb-2">
                     <Navbar title="" onClick={null} isInvisible={true} />

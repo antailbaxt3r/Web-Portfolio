@@ -31,7 +31,7 @@ const OverlayAnimationContainer = ({
                         </motion.h1>
                     </div>
                 </div>
-                <div className="hero-grid">
+                <div className="hero-grid flex-col">
                     <div className="hero-grid-row">
                         <div className="hero-grid-box md:flex-2">
                             <MotionOverlay

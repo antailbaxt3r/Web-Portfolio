@@ -22,7 +22,7 @@ const Work = () => {
                 <div className="navbar">
                     <Navbar title="work" onClick={setReveal} />
                 </div>
-                <div className="hero-grid md:flex-row flex-col">
+                <div className="hero-grid flex-col">
                     <div className="hero-grid-row">
                         <WorkExperience
                             init={{ x: -20 }}
