@@ -78,7 +78,7 @@ const ProjectDetails = ({
                         {hover && (
                             <motion.div
                                 layout
-                                className={`w-92 h-92 flex items-center justify-center justify-contents`}
+                                className={`w-92 h-92 lg:w-124 lg:h-124 flex items-center justify-center justify-contents`}
                             >
                                 <img
                                     src={imgUrl}
